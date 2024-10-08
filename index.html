@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+  <title>Challenge ONE | Front End - Portafolio</title>
+  <link rel="stylesheet" href="src/styles/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/main.css" /></noscript>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header__content container">
+      <div class="header__logo-menu">
+        <a href="/challenge-portafolio" class="header__link" aria-label="Ir a la página principal">
+          <img src="public/Logo1.jpg" alt="Logo JR" class="header__logo" />
+          <span class="header__name">Nicolas</span>
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list" id="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#sobre-mi" class="main-nav__link">My Information</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#skills" class="main-nav__link">Skills</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#hobbies" class="main-nav__link">Hobbies</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#formacion" class="main-nav__link">Formación</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#projects" class="main-nav__link">Proyectos</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#contact" class="main-nav__link main-nav__link--contact">nico_e123@outlook.com</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- fin del header -->
+
+  <!-- main -->
+  <main>
+    <!-- hero -->
+    <section class="hero container padding-section" id="hero">
+
+      <picture>
+        <source srcset="public/Picture-imagen.avif" type="image/avif">
+        <source srcset="public/Picture-imagen.webp" type="image/webp">
+        <img class="hero__image" src="public/Picture-imagen.jpg" alt="Descripción de la imagen hero">
+      </picture>
+
+      <div class="hero__content">
+
+        <h1 class="hero__title">
+          Hola, mi nombre es <span>Nicolas</span> y soy Desarrollador Front End Junior.
+        </h1>
+
+        <p class="hero__description">
+          "Mi evolución como desarrollador front-end,
+          gracias a la sólida formación que he recibido en Alura Latam.
+          Estoy emocionado de mostrar lo que puedo hacer y de conectar con otras personas que comparten mi interés por
+          la tecnología."<span>#OracleONE #AluraLatam #Front End</span>.</p>
+
+        <nav class="hero__social-media" aria-label="Redes sociales">
+          <ul class="hero__social-list">
+            <li class="hero__social-item">
+              <a href="https://github.com/Nicolas200211" class="hero__social-link"
+                aria-label="Visita mi perfil de Github">
+                <button>Github</button> <img src="public/github.png" alt="Flecha">
+              </a>
+            </li>
+            <li class="hero__social-item">
+              <a href="https://www.linkedin.com/in/mariano-nicolas-reymundez-retamozo-15b57a265/" target="_blank"
+                rel="noopener" class="hero__social-link" aria-label="Visita mi perfil de LinkedIn">
+                <button>LinkedIn</button> <img src="public/linkedin.png" alt="Flecha">
+              </a>
+            </li>
+            <li class="hero__social-item">
+              <a href="https://x.com/RetamozoNi40308" class="hero__social-link"
+                aria-label="Visita mi perfil de Twitter">
+                <button>Twitter</button> <img src="public/twitter.png" alt="Flecha">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- fin hero -->
+
+    <!-- sobre mi -->
+    <section class="sobre-mi" id="sobre-mi">
+
+      <div class="sobre-mi__content container padding-section">
+        <h2 class="sobre-mi__title">Sobre mí</h2>
+        <p class="sobre-mi__text">
+          ¡Hola! Soy Nicolás, un desarrollador web apasionado por crear experiencias digitales funcionales y atractivas.
+          Me dedico tanto al frontend como al backend, y siempre estoy en constante aprendizaje, buscando mejorar mis
+          habilidades y perfeccionar cada proyecto en el que trabajo.
+          Tengo un enfoque detallado en cada aspecto del desarrollo: desde el diseño visual, asegurando que cada
+          componente esté en armonía, hasta la funcionalidad, optimizando para que todo fluya de manera eficiente.
+        </p>
+        <p class="sobre-mi__text">
+          En cada proyecto, me aseguro de que la experiencia del usuario sea lo mejor posible.
+          No solo me interesa que algo funcione bien, sino también que sea visualmente impactante y fácil de usar.
+          Mi objetivo es crear sitios web y aplicaciones que no solo cumplan con los requisitos técnicos, sino que
+          también generen una conexión con el usuario.
+        </p>
+        <!-- Firma opcional
+        <figure class="sobre-mi__signature">
+          <img src="public/signature.png" alt="Firma" class="sobre-mi__firma-image">
+          <figcaption class="sobre-mi__firma-description">Firma de autor</figcaption>
+        </figure>-->
+      </div>
+    </section>
+    <!-- fin sección sobre mi -->
+
+    <!-- skills -->
+    <section class="skills" id="skills">
+
+      <div class="skills__content container padding-section">
+
+        <h2 class="skills__title">Skills</h2>
+
+        <ul class="skills__list" role="list">
+          <li class="skills__item">
+            <img class="skills__icon" src="public/skills-icons/html.svg" alt="HTML 5 icon" loading="lazy">
+            <p class="skills__name">HTML 5</p>
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="public/skills-icons/css.svg" alt="CSS icon" loading="lazy">
+            <p class="skills__name">CSS</p>
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="public/skills-icons/js.svg" alt="JavaScript icon" loading="lazy">
+            <p class="skills__name">JavaScript</p>
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="public/skills-icons/react.svg" alt="React icon" loading="lazy">
+            <p class="skills__name">React</p>
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="public/skills-icons/ts.svg" alt="TypeScript icon" loading="lazy">
+            <p class="skills__name">TypeScript</p>
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="public/skills-icons/git.svg" alt="Git icon" loading="lazy">
+            <p class="skills__name">Git</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- fin sección skills -->
+
+    <!-- hobbies -->
+    <section class="hobbies" id="hobbies">
+
+      <div class="hobbies__content container padding-section">
+
+        <h2 class="hobbies__title">Hobbies</h2>
+
+        <ul class="hobbies__list">
+          <li class="hobbies__item">
+            <img class="hobbies__icon" src="public/hobbies-icons/headphones.svg" alt="Audifonos icon" loading="lazy">
+            <p class="hobbies__name">Oír música</p>
+          </li>
+          <li class="hobbies__item">
+            <img class="hobbies__icon" src="public/hobbies-icons/tv.svg" alt="TV icon" loading="lazy">
+            <p class="hobbies__name">Ver series</p>
+          </li>
+          <li class="hobbies__item">
+            <img class="hobbies__icon" src="public/hobbies-icons/anime.svg" alt="Anime icon" loading="lazy">
+            <p class="hobbies__name">Anime/Manga</p>
+          </li>
+          <li class="hobbies__item">
+            <img class="hobbies__icon" src="public/hobbies-icons/videogames.svg" alt="Control icon" loading="lazy">
+            <p class="hobbies__name">Videojuegos</p>
+          </li>
+          <li class="hobbies__item">
+            <img class="hobbies__icon" src="public/hobbies-icons/futbol.svg" alt="Icono de cancha de futbol"
+              loading="lazy">
+            <p class="hobbies__name">Futbol</p>
+          </li>
+          <li class="hobbies__item">
+            <img class="hobbies__icon" src="public/hobbies-icons/code.svg" alt="Icono de `digo" loading="lazy">
+            <p class="hobbies__name">Programar</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- fin sección hobbies -->
+
+    <!-- formación -->
+    <section class="formacion" id="formacion">
+
+      <div class="formacion__content container padding-section">
+
+        <h2 class="formacion__title">Formación académica</h2>
+
+        <ul class="formacion__list" role="list">
+
+          <li class="formacion__item">
+            <picture>
+              <source media="(min-width: 992px)" srcset="public/alura-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="public/alura-tablet.jpg">
+              <img class="formacion__image" src="public/alura.jpg" alt="Alura" loading="lazy">
+            </picture>
+            <div class="formacion__details">
+              <h3 class="formacion__course">ONE | Fase 3 - Especialización Front-End</h3>
+              <p class="formacion__period">2024 - Alura</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <!-- fin sección formación -->
+
+    <!-- proyectos -->
+    <section class="projects" id="projects">
+
+      <div class="projects__content container padding-section">
+
+        <h2 class="projects__title">Experiencia profesional</h2>
+
+        <div class="project">
+          <div>
+            <picture>
+              <source srcset="public/project-01.avif" type="image/avif">
+              <img src="public/project-01.png" class="project__img" alt="Imagen del proyecto">
+            </picture>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Encriptador de texto</h3>
+            <p class="project__text">Challenge Oracle</p>
+
+            <div class="btn__content">
+              <a href="https://github.com/Nicolas200211/Encriptador-de-Texto.git" class="btn btn--repo" target="_blank"
+                rel="noopener">Repositório</a>
+              <a href="https://nicolas200211.github.io/Encriptador-de-Texto/" class="btn btn--demo" target="_blank"
+                rel="noopener">Ver demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <picture>
+              <source srcset="public/project-02.avif" type="image/avif">
+              <img src="public/project-02.jpg" class="project__img" alt="Imagen del proyecto">
+            </picture>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Portafolio</h3>
+            <p class="project__text">Challenge Oracle</p>
+
+            <div class="btn__content">
+              <a href="https://github.com/neolinkDev/challenge-portafolio" class="btn btn--repo" target="_blank"
+                rel="noopener">Repositório</a>
+              <button href="#" class="btn" disabled>Ver demo</>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- fin sección proyectos -->
+
+    <!-- coctacto -->
+    <section class="contact" id="contact">
+
+      <div class="contact__content container padding-section">
+
+        <picture>
+          <source srcset="public/contact-img.avif" type="image/avif">
+          <img class="contact__img" src="public/contact-img.jpg" alt="Imagen de contacto" loading="lazy">
+        </picture>
+
+        <div>
+          <h2 class="contact__title">Contacto</h2>
+          <p class="contact__text">¿Quieres contactarme?</p>
+          <p class="contact__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
+          </p>
+
+          <form class="form-group" id="form" action="enviar.php" method="post" action="https://formsubmit.co/nico_e123@outlook.com" method="POST" >
+            <div class="form-item">
+              <input type="text" id="name" name="name" class="form-control form-control--input" placeholder=" "
+                autocomplete="off" required>
+              <label for="name">Nombre</label>
+              <span id="error-name" class="error"></span>
+            </div>
+
+            <div class="form-item">
+              <input type="text" id="email" name="email" class="form-control form-control--input" placeholder=" "
+                autocomplete="off" required>
+              <label for="email">Correo electrónico</label>
+              <span id="error-mail" class="error"></span>
+            </div>
+
+            <div class="form-item">
+              <input type="text" id="subject" name="subject" class="form-control form-control--input" placeholder=" "
+                autocomplete="off" required>
+              <label for="subject">Asunto</label>
+              <span id="error-subject" class="error"></span>
+            </div>
+
+            <div class="form-item">
+              <textarea id="message" name="message" class="form-control form-control--textarea" placeholder=" "
+                required></textarea>
+              <label for="message">Mensaje</label>
+              <span id="error-message" class="error"></span>
+            </div>
+
+            <button class="btn btn--submit" type="submit" disabled aria-live="polite">Enviar mensaje</button>
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- fin seccion contacto -->
+
+  </main>
+  <!-- fin main -->
+
+  <!-- footer -->
+  <footer class="footer padding-section-2" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Nicolás</h3>
+        <p>Desarrollador Web Full Stack</p>
+        <p>Ayacucho, Perú</p>
+      </div>
+
+      <div class="footer-middle">
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <ul class="social-links">
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:nico_e123@outlook.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nicolás | Todos los derechos reservados</p>
+    </div>
+
+  </footer>
+  <!-- fin footer -->
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

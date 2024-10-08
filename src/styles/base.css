@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #1d6a6b;
+  --secondary-color: #485358;
+  --tertiary-color: #d0efef;
+  --white-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Urbanist", system-ui, -apple-system, sans-serif;
+  font-size: 1.6rem;
+  background-color: rgb(63, 187, 209);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: "Anton", system-ui;
+}
+
+/*
+=============== 
+  Utilities
+===============
+*/
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+}
+
+.padding-section {
+  padding: 9.5rem 1.6rem;
+}
+@media(min-width: 768px){
+  .padding-section {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+.padding-section-2 {
+  padding: 9.5rem 1.6rem;
+}
+
+.hidden {
+  visibility: hidden;
+}

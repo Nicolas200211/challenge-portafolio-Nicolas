@@ -1,0 +1,64 @@
+.formacion {
+  background-color: white;
+  padding: 10px;
+}
+
+.formacion__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+@media(min-width: 992px) {
+  .formacion__title {
+    font-size: 3.2rem;
+  }
+}
+
+.formacion__list {
+  display: flex;
+  justify-content: center;
+}
+
+@media(min-width: 768px) {
+  .formacion__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(min-width: 992px) {
+  .formacion__item {
+
+    align-items: start;
+  }
+}
+
+.formacion__image {
+  border: 3px solid black;
+  margin-bottom: 8px;
+}
+
+.formacion__details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formacion__course {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.formacion__period {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.formacion__course,
+.formacion__period {
+  color: black;
+}

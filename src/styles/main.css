@@ -1,0 +1,10 @@
+@import 'base.css';
+@import 'header/header.css';
+@import 'hero/hero-section.css';
+@import 'sobre-mi/sobre-mi-section.css';
+@import 'skills/skills-section.css';
+@import 'hobbies/hobbies-section.css';
+@import 'formacion/formacion-section.css';
+@import 'projects/projects-section.css';
+@import 'contact/contact-section.css';
+@import 'footer.css';

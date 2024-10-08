@@ -1,0 +1,150 @@
+section {
+  padding-top: 250px; /* Ajusta según la altura del header */
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media(min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .hero {
+    padding: 3.2rem 10px;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width: 1155px) {
+  .hero {
+    padding: 3.2rem 0;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: scale-down;
+  display: block;
+  margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+  .hero__image {
+    width: 146px;
+    height: 146px;
+  }
+}
+
+@media(min-width: 992px) {
+  .hero__image {
+    width: 368px;
+    height: 368px;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media(min-width: 768px) {
+  .hero__content {
+    order: 1;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+@media(min-width: 992px) {
+  .hero__content {
+    gap: 24px;
+  }
+}
+
+@media(min-width: 768px) {
+  .hero picture {
+    order: 2;
+  }
+}
+
+.hero__title {
+  font-family: "Anton", system-ui;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+@media(min-width: 992px) {
+  .hero__title {
+    font-size: 5.2rem;
+  }
+}
+
+.hero__title span {
+  color: rgb(19, 62, 70);
+  line-height: 1.1;
+}
+
+.hero__description,
+.hero__social-link {
+  font-size: 1.4rem;
+}
+
+@media(min-width: 768px) {
+  .hero__description,
+  .hero__social-link {
+    font-size: 1.6rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .hero__description {
+    font-size: 2.2rem;
+  }
+}
+
+.hero__description {
+  color: white;
+}
+
+.hero__description span {
+  font-weight: 600;
+}
+
+.hero__social-list {
+  display: flex;
+  gap: 8px;
+}
+
+.hero__social-link button {
+  display: contents;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+}
+.hero__social-link button:hover {
+  color: rgb(34, 99, 110);
+}
+
+@media(min-width: 768px) {
+  .hero__social-link {
+    gap: 4px;
+  }
+}
+
+.hero__social-link img {
+  transition: transform 0.3s ease;
+}
+
+.hero__social-link:hover img {
+  transform: rotate(45deg);
+}

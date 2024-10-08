@@ -1,0 +1,137 @@
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.header__logo{
+  width: 60px;
+}
+@media(min-width: 992px) {
+  .header {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+  }
+}
+
+@media(min-width: 1155px) {
+  .header {
+    padding: 3.2rem 0;
+  }
+}
+
+.header__logo-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  padding: 1.6rem;
+}
+
+@media(min-width: 768px) {
+  .header__logo-menu {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .header__logo-menu {
+    padding: 0;
+  }
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  -webkit-user-select: none;
+  user-select: none; 
+}
+.header__link:hover {
+  animation: pulse 1.5s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header__name {
+  font-family: "Anton", system-ui;
+  color: black;
+  font-size: 1.6rem;
+  letter-spacing: .7px;
+}
+
+.header__button {
+  background: transparent;
+  border-color: transparent;
+  transition: color 0.3s linear, transform 0.3s linear;
+  cursor: pointer;
+  color: red;
+}
+
+.header__button:hover {
+  color: red;
+  transform: rotate(-90deg);
+}
+
+@media(min-width: 992px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+@media (min-width: 700px) {
+  .main-nav__list {
+    overflow: hidden;
+    justify-content: center;
+  }
+}
+
+.main-nav__link {
+  color: black;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  display: block;
+  padding: 0.8rem 1.6rem;
+  transition: color 0.3s linear, color 0.3s linear, padding-left 0.3s linear;
+  font-weight: 500;
+}
+
+.main-nav__link:hover {
+  color: rgb(63, 187, 209);
+}
+
+.main-nav__link--contact {
+  text-align: right;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .main-nav__link--contact {
+    margin-right: 0;
+  }
+}
